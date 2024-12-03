@@ -32,8 +32,7 @@ Transform:
   m_LocalPosition: {x: -0.782, y: 0.763, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6343727316187384707}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6481715552889389603
@@ -169,90 +168,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 7721983301692641046}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b902fdc0868f2142a18477b6a4d112a, type: 3}
+  m_Script: {fileID: 11500000, guid: b99a432089b99db4f81c16cf12b51e95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  speedLimit: 10
-  projectileLauncher: {fileID: 965162748857881498}
---- !u!1001 &7125889165324724327
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 5190165317263405693}
-    m_Modifications:
-    - target: {fileID: 4246133667207226340, guid: ce2e02e0a54798b489e33bf06eb9609b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.17815623
-      objectReference: {fileID: 0}
-    - target: {fileID: 4246133667207226340, guid: ce2e02e0a54798b489e33bf06eb9609b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5764
-      objectReference: {fileID: 0}
-    - target: {fileID: 4246133667207226340, guid: ce2e02e0a54798b489e33bf06eb9609b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.4067
-      objectReference: {fileID: 0}
-    - target: {fileID: 4246133667207226340, guid: ce2e02e0a54798b489e33bf06eb9609b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.353
-      objectReference: {fileID: 0}
-    - target: {fileID: 4246133667207226340, guid: ce2e02e0a54798b489e33bf06eb9609b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.07387467
-      objectReference: {fileID: 0}
-    - target: {fileID: 4246133667207226340, guid: ce2e02e0a54798b489e33bf06eb9609b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4246133667207226340, guid: ce2e02e0a54798b489e33bf06eb9609b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4246133667207226340, guid: ce2e02e0a54798b489e33bf06eb9609b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4246133667207226340, guid: ce2e02e0a54798b489e33bf06eb9609b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4246133667207226340, guid: ce2e02e0a54798b489e33bf06eb9609b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4246133667207226340, guid: ce2e02e0a54798b489e33bf06eb9609b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4246133667207226340, guid: ce2e02e0a54798b489e33bf06eb9609b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7375199381098454810, guid: ce2e02e0a54798b489e33bf06eb9609b, type: 3}
-      propertyPath: m_Name
-      value: ProjectileLauncher
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ce2e02e0a54798b489e33bf06eb9609b, type: 3}
---- !u!114 &965162748857881498 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8034646142906088445, guid: ce2e02e0a54798b489e33bf06eb9609b, type: 3}
-  m_PrefabInstance: {fileID: 7125889165324724327}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5719968b98a3524409fcb0f2a469db49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &6343727316187384707 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4246133667207226340, guid: ce2e02e0a54798b489e33bf06eb9609b, type: 3}
-  m_PrefabInstance: {fileID: 7125889165324724327}
-  m_PrefabAsset: {fileID: 0}
+  rb: {fileID: 0}
+  moveSpeed: 0.25
+  maxSpeed: 1
+  speedDecay: 0.6
+  jumpForce: 1
+  playerUI: {fileID: 0}
+  mainMenuManager: {fileID: 0}
+  pointSound: {fileID: 0}
+  hitSound: {fileID: 0}
+  eatingSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  SFXSource: {fileID: 0}
+  musicSource: {fileID: 0}
+  deathSoundSource: {fileID: 0}
+  PlayerInput: {fileID: 0}
+  invincible: 0
+  spriteRenderer: {fileID: 0}
+  sprites: []
+  groundCheck: {fileID: 0}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
