@@ -54,10 +54,10 @@ public class Cubelet : MonoBehaviour
         if (isGrounded){
             rb.velocity = new Vector3(rb.velocity.x * speedDecay, rb.velocity.y);
         }
-        if(playerUI.health >= 4){
+        /*if(playerUI.health >= 4){
             playerUI.health = 3;
             spriteRenderer.sprite = sprites[playerUI.health-1];
-        }
+        }*/
     }
 
     public void Movement(Vector3 movement){
@@ -109,7 +109,7 @@ public class Cubelet : MonoBehaviour
             else if(other.CompareTag("healthProjectile")){
                 Destroy(other.gameObject);
                 SFXSource.PlayOneShot(eatingSound);
-                if(playerUI.health <= 3 && playerUI.health >= 1){
+                if(playerUI.health < 3 && playerUI.health >= 1){
                     Debug.Log("Health Gained");
                     playerUI.increaseHealth();
                     spriteRenderer.sprite = sprites[playerUI.health-1];
